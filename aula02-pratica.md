@@ -1,5 +1,7 @@
 ### Prática de Docker Compose
 
+#### [Documentação](https://docs.docker.com/compose/gettingstarted/)
+
 #### Primeiro Container
 
 1. Criar um arquivo Dockerfile com o seguinte conteúdo:
