@@ -18,7 +18,7 @@ Componentes da reactive streams API
 
 ## O que é Project Reactor
 
-É uma biblioteca reativa para construção de aplicações não-bloqueantes na JVM. O project reactor é a base da stack da programação reativa no ecossistema Spring.
+É uma biblioteca reativa para construção de aplicações não-bloqueantes na JVM. O project reactor é a base da stack da programação reativa no ecossistema Spring. O Project reactor implementa as interfaces do __reactive streams api_.
 
 Um sistema reativo prega os seguintes conceitos:
 
