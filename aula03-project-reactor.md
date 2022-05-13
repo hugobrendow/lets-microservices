@@ -1,5 +1,17 @@
 ## Project Reactor
 
+## Programação reativa
+
+- assíncrona e não bloqueante (nonBlocking).
+- baseado a eventos/mensagens
+- Tudo é _data stream_
+- Backpressure
+- Programação funcional/declarativa
+
+### Reactive streams
+
+???
+
 ## O que é Project Reactor
 
 É uma biblioteca reativa para construção de aplicações não-bloqueantes na JVM. O project reactor é a base da stack da programação reativa no ecossistema Spring.
