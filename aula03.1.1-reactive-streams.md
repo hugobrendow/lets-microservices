@@ -177,6 +177,7 @@ para
 ```java
 emailService.enviarEmailAsincrono(para, titulo, conteudo);
 ```
+Em todas as chamadas! (duas chamadas)
 
 E verifique novamente o tempo de resposta!
 
