@@ -74,11 +74,11 @@ scrape_configs:
     static_configs:
       - targets: [ 'localhost:8081' ]
 ```
-> o ultimo job deve apontar para a aplicação, como vamos baixar um docker para usar o prometheus devemos apontar para o docker olhar para a aplicação que está na nossa máquina, com o host _host.docker.internal_ informando que é para olhar para o host externo ou usar uma rede (network) do tipo _host_
+> o ultimo job deve apontar para a aplicação, como vamos baixar um docker para usar o prometheus devemos apontar para o docker olhar para a aplicação que está na nossa máquina, em caso de docker-compose devemos informar o arquivo para olhar para a nossa máquina com o host `host.docker.internal` informando que é para olhar para o host externo ou usar uma rede (network) do tipo _host_
 
 O Prometheus tem uma boa prática de "se observar" também, então no arquivo de configuração do prometheus também é necessário colocar um _job_ apontando para ele mesmo.
 
+Com isso configurado só precisamos rodar o comando abaixo para iniciar
+
     docker run -d --name=prometheus -p 9090:9090 --network host -v <DIRETORIO_ARQUIVO>:/etc/prometheus prom/prometheus --config.file=/etc/prometheus/prometheus.yml
 
-
-Com isso configurado só precisamos rodar o comando abaixo para iniciar
