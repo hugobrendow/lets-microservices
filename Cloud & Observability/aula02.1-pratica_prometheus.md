@@ -56,3 +56,29 @@ management:
 ```
 
 Se tudo foi configurado corretamente deve ser possível chamar o endpoint _/actuator/prometheus_
+
+Crie o arquivo a seguir em um diretório qualquer:
+
+```yml
+global:
+  scrape_interval:     15s
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['localhost:9090']
+        - 
+  - job_name: 'spring-boot-letscode'
+    scrape_interval: 5s
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'localhost:8081' ]
+```
+> o ultimo job deve apontar para a aplicação, como vamos baixar um docker para usar o prometheus devemos apontar para o docker olhar para a aplicação que está na nossa máquina, com o host _host.docker.internal_ informando que é para olhar para o host externo ou usar uma rede (network) do tipo _host_
+
+O Prometheus tem uma boa prática de "se observar" também, então no arquivo de configuração do prometheus também é necessário colocar um _job_ apontando para ele mesmo.
+
+    docker run -d --name=prometheus -p 9090:9090 --network host -v <DIRETORIO_ARQUIVO>:/etc/prometheus prom/prometheus --config.file=/etc/prometheus/prometheus.yml
+
+
+Com isso configurado só precisamos rodar o comando abaixo para iniciar
