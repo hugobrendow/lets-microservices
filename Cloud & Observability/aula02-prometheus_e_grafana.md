@@ -46,4 +46,4 @@ Você pode fazer a configuração do tempo que o prometheus faz essas requisiç�
     > Ex.: Prometheus
 
     
-> Materiais de apoio: (Artigo no medium)[https://medium.com/mobicareofficial/conhe%C3%A7a-o-prometheus-conjunto-de-ferramentas-de-monitoramento-e-alertas-para-servi%C3%A7os-e-aplica%C3%A7%C3%B5es-fefd13dac709]
+> Materiais de apoio: [Artigo no medium](https://medium.com/mobicareofficial/conhe%C3%A7a-o-prometheus-conjunto-de-ferramentas-de-monitoramento-e-alertas-para-servi%C3%A7os-e-aplica%C3%A7%C3%B5es-fefd13dac709)
