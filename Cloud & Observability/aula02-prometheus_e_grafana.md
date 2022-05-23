@@ -19,6 +19,8 @@ Quando você tem um log você consegue ter uma visão de tudo que acontece na su
 
 ### Prometheus
 
+<center><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.codetd.com%2Fpt%2Farticle%2F13746608&psig=AOvVaw29bjDj5yBudAkjBYxxBx1J&ust=1653391385101000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOCFrIvB9fcCFQAAAAAdAAAAABAD">
+
 Temos a ferramenta (Prometheus) que faz um pull via http na sua aplicação pegando metricas e monitorando, ele acessa a url _/metrics_ que serve o prometheus igualmente a gente fazia com o actuator e o spring boot admin, sempre que ver o /metrics pode saber que por convensão ele ta servindo um serviço do prometheus - isso da uma liberdade de escolher o que realmente é importante e o que você vai precisar como logs como por exemplo: 
     * Quantidade de compras
     * Tempo de resposta no processo de compras
