@@ -44,3 +44,6 @@ Você pode fazer a configuração do tempo que o prometheus faz essas requisiç�
 
     O serviço monitor que busca a informação na aplicação, faz um pull na aplicação, neste caso não precisaremos de _agent_ instalado.
     > Ex.: Prometheus
+
+    
+> Materiais de apoio: (Artigo no medium)[https://medium.com/mobicareofficial/conhe%C3%A7a-o-prometheus-conjunto-de-ferramentas-de-monitoramento-e-alertas-para-servi%C3%A7os-e-aplica%C3%A7%C3%B5es-fefd13dac709]
