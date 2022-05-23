@@ -9,7 +9,7 @@ Primeiro, precisaremos do __spring boot actuator__ um subprojeto do Spring boot,
 
 1. Primeiro passo a ser realizado é a inclusão da dependência no `pom.xml` do projeto a ser monitorado.
 
-```sh
+```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-actuator</artifactId>
@@ -28,7 +28,7 @@ Ele habilita alguns endpoints por _default_, onde é possível consumir algumas 
 
 O Micrometer fornece uma camada para exibição de métricas baseada em bibliotecas clientes dos mais populares sistemas de monitoramento. Através de poucas configurações, é possível selecionar um ou vários sistemas de monitoramento para exportar as métricas de sua aplicação: Prometheus, New Relic, Atlas e Datadog são alguns deles.
 
-```sh
+```xml
 <dependency>
     <groupId>io.micrometer</groupId>
     <artifactId>micrometer-registry-prometheus</artifactId>
