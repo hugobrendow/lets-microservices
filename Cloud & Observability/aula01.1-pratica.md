@@ -28,6 +28,14 @@ info.app.java.version=@java.version@
 
 Podemos realizar uma requisição `GET` para o endpoint: `http://localhost:PORTA/actuator`
 
+4. Liberando recursos do actuator para visualização:
+
+```sh
+management.endpoint.info.enabled=true
+management.endpoints.web.exposure.include=*
+management.endpoints.web.exposure.exclude=env,beans
+```
+
 
 #### Criando projeto [Spring boot Admin](https://github.com/codecentric/spring-boot-admin)
 
