@@ -1,8 +1,10 @@
 ## Prometheus & Grafana
 
 #### Referências
-[Grafana](https://grafana.com/docs/grafana/latest/installation/docker/)
-[Métricas do Spring boot](https://grafana.com/blog/2022/05/04/how-to-capture-spring-boot-metrics-with-the-opentelemetry-java-instrumentation-agent/)
+##### [Grafana](https://grafana.com/docs/grafana/latest/installation/docker/)
+##### [Métricas do Spring boot](https://grafana.com/blog/2022/05/04/how-to-capture-spring-boot-metrics-with-the-opentelemetry-java-instrumentation-agent/)
+
+##### [Todos Dashboards disponíveis](https://grafana.com/grafana/dashboards/)
 
 Utilizaremos as seguintes tecnologias:
 
@@ -44,7 +46,7 @@ grafana/grafana
 
 4. No projeto Java que será monitorado, é necessário adicionar as seguintes dependências no ``pom.xml``
 
-```sh
+```xml
 <dependency>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-starter-actuator</artifactId>
@@ -58,7 +60,7 @@ grafana/grafana
 
 5. No application.properties do projeto, é necessário adicionar o conteúdo abaixo:
 
-```sh
+```yml
 management.endpoints.web.exposure.include=*
 ```
 
@@ -66,3 +68,10 @@ management.endpoints.web.exposure.include=*
 
 [Imagem de Exemplo](https://i.imgur.com/hsQzz7G.png)
 
+7. Acessando a interface ``http://localhost:3000`` crie um novo Datasource apontando para o Prometheus.
+
+8. Crie seu Dashboard personalizado.
+
+[Personalize suas métricas](https://www.metricfire.com/blog/using-grafana-and-graphite-to-monitor-server-load/#bDisk-IOb)
+
+9. Adicione o seguinte [Dashboard](https://grafana.com/grafana/dashboards/4701) importando ele no grafana.
