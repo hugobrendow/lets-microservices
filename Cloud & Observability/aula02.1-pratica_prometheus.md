@@ -25,6 +25,7 @@ Ele habilita alguns endpoints por _default_, onde é possível consumir algumas 
 > é possível habilitar e desabilitar estes endpoints atraés do arquivo de configuração da aplicação, no nosso caso o properties
 
 #### Adicionando Micrometer no projeto
+> Documentação: https://micrometer.io/docs/concepts
 
 O Micrometer fornece uma camada para exibição de métricas baseada em bibliotecas clientes dos mais populares sistemas de monitoramento. Através de poucas configurações, é possível selecionar um ou vários sistemas de monitoramento para exportar as métricas de sua aplicação: Prometheus, New Relic, Atlas e Datadog são alguns deles.
 
