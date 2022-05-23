@@ -19,12 +19,12 @@ Quando você tem um log você consegue ter uma visão de tudo que acontece na su
 
 ### Prometheus
 
-    Temos a ferramenta (Prometheus) que faz um pull via http na sua aplicação pegando metricas e monitorando, ele acessa a url _/metrics_ que serve o prometheus igualmente a gente fazia com o actuator e o spring boot admin [sempre que ver o /metrics pode saber que por convensão ele ta servindo um serviço do prometheus] isso da uma liberdade de escolher o que realmente é importante e o que você vai precisar como logs como por exemplo: 
+Temos a ferramenta (Prometheus) que faz um pull via http na sua aplicação pegando metricas e monitorando, ele acessa a url _/metrics_ que serve o prometheus igualmente a gente fazia com o actuator e o spring boot admin, sempre que ver o /metrics pode saber que por convensão ele ta servindo um serviço do prometheus - isso da uma liberdade de escolher o que realmente é importante e o que você vai precisar como logs como por exemplo: 
     * Quantidade de compras
     * Tempo de resposta no processo de compras
     * Quantos usuários acessam nossa aplicação
     
-    Você pode fazer a configuração do tempo que o prometheus faz essas requisições.
+Você pode fazer a configuração do tempo que o prometheus faz essas requisições.
 
     -   Uma ferramenta de monitoramento de alerta de sistema open source
     -   Criado pela SoundCloud
