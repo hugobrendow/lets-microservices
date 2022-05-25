@@ -18,13 +18,17 @@ Utilizaremos as seguintes tecnologias:
 ```sh
 global:
   scrape_interval: 10s
- 
 scrape_configs:
-  - job_name: 'spring_micrometer'
-    metrics_path: '/actuator/prometheus'
+  - job_name: 'prometheus'
     scrape_interval: 5s
     static_configs:
-      - targets: ['localhost:8080']
+      - targets: ['localhost:9090']
+        - 
+  - job_name: 'spring-boot-letscode'
+    scrape_interval: 5s
+    metrics_path: /actuator/prometheus
+    static_configs:
+      - targets: [ 'localhost:8081' ]
 ```
 
 2. Instalar o prometheus conforme o comando abaixo:
